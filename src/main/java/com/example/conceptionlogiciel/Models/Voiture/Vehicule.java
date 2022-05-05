@@ -3,6 +3,7 @@ package com.example.conceptionlogiciel.Models.Voiture;
 public class Vehicule
 {
     private String marque;
+    private String numeroImmatriculation;
     private int annee;
     private boolean pourClientEnregistrer;
     private int killometrage;
@@ -155,5 +156,15 @@ public class Vehicule
     public void setEtat(Etat etat)
     {
         this.etat = etat;
+    }
+
+    public String getNumeroImmatriculation()
+    {
+        return numeroImmatriculation;
+    }
+
+    public void setNumeroImmatriculation(String numeroImmatriculation)
+    {
+        this.numeroImmatriculation = numeroImmatriculation;
     }
 }
