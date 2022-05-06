@@ -22,19 +22,6 @@ public class HelloController
 {
     @FXML
     private Label welcomeText;
-    @FXML
-    private BorderPane border;
-    @FXML
-    private TableView table;
-
-    @FXML
-    private Scene scene;
-    private Node node;
-    private Stage stage;
-
-    private Catalogue catalogue;
-    @FXML
-    private TableColumn marque, immatriculation, couleur, année, kilometrage, carburant, places, type, location_reservation;
 
     @FXML
     protected void onHelloButtonClick()
@@ -42,24 +29,5 @@ public class HelloController
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 
-    protected void loadCatalogue() throws IOException {
 
-        swapTo("catalogue.fxml");
-
-        marque.setCellValueFactory( new PropertyValueFactory<Vehicule,String>("marque"));
-        immatriculation.setCellValueFactory( new PropertyValueFactory<Vehicule,String>("numeroImmatriculation"));
-        année.setCellValueFactory( new PropertyValueFactory<Vehicule,Integer>("annee"));
-        carburant.setCellValueFactory( new PropertyValueFactory<Vehicule, TypeCarburant>("carburant"));
-        couleur.setCellValueFactory( new PropertyValueFactory<Vehicule,String>("couleur"));
-        kilometrage.setCellValueFactory( new PropertyValueFactory<Vehicule,Integer>("killometrage"));
-        places.setCellValueFactory( new PropertyValueFactory<Vehicule,Integer>("nombreDePlace"));
-        location_reservation.setCellValueFactory( new PropertyValueFactory<Vehicule,Boolean>("EnLocationReservation"));
-        type.setCellValueFactory( new PropertyValueFactory<Vehicule,Boolean>("type"));
-
-        table.setItems((ObservableList) catalogue.getVehicules());
-    }
-
-    public void swapTo(String url) throws IOException {
-        border.setCenter(FXMLLoader.load(Objects.requireNonNull(getClass().getResource(url))));
-    }
 }
