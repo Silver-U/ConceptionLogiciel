@@ -12,7 +12,7 @@ public class Client
     private String numeroPermis;
     private int age;
     private String numeroTel;
-    private List<Accompagneur> accompagneurs;
+    private final List<Accompagneur> accompagneurs;
 
     public Client(String nom, String prenom, String adresse, String numeroPermis, int age, String numeroTel)
     {

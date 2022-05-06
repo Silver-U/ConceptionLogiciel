@@ -14,15 +14,15 @@
          <center>
             <TableView fx:id="table" prefHeight="418.0" prefWidth="794.0" BorderPane.alignment="CENTER">
                <columns>
-                  <TableColumn prefWidth="75.0" text="Marque" />
-                  <TableColumn prefWidth="100.80001068115234" text="Immatriculation" />
-                  <TableColumn prefWidth="58.39996337890625" text="Année" />
-                  <TableColumn prefWidth="71.20002746582031" text="Couleur" />
-                  <TableColumn prefWidth="59.20001220703125" text="Type" />
-                  <TableColumn prefWidth="77.60003662109375" text="Places" />
-                  <TableColumn prefWidth="97.5999755859375" text="Carburant" />
-                  <TableColumn prefWidth="100.79998779296875" text="Kilometrage" />
-                  <TableColumn prefWidth="120.79998779296875" text="Location/Reservation" />
+                  <TableColumn prefWidth="75.0" text="Marque" fx:id="marque"/>
+                  <TableColumn prefWidth="100.80001068115234" text="Immatriculation" fx:id="immatriculation"/>
+                  <TableColumn prefWidth="58.39996337890625" text="Année" fx:id="année"/>
+                  <TableColumn prefWidth="71.20002746582031" text="Couleur" fx:id="couleur"/>
+                  <TableColumn prefWidth="59.20001220703125" text="Type" fx:id="type"/>
+                  <TableColumn prefWidth="77.60003662109375" text="Places" fx:id="places"/>
+                  <TableColumn prefWidth="97.5999755859375" text="Carburant" fx:id="carburant"/>
+                  <TableColumn prefWidth="100.79998779296875" text="Kilometrage" fx:id="kilometrage"/>
+                  <TableColumn prefWidth="120.79998779296875" text="Location/Reservation" fx:id="location_reservation"/>
                </columns>
             </TableView>
          </center>

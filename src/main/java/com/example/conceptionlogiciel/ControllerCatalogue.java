@@ -1,6 +1,7 @@
 package com.example.conceptionlogiciel;
 
 import com.example.conceptionlogiciel.Catalogue;
+import com.example.conceptionlogiciel.Models.Voiture.Type;
 import com.example.conceptionlogiciel.Models.Voiture.TypeCarburant;
 import com.example.conceptionlogiciel.Models.Voiture.Vehicule;
 import javafx.collections.ObservableList;
@@ -46,6 +47,8 @@ public class ControllerCatalogue {
     protected void loadCatalogue() {
 
         swapTo("catalogue.fxml");
+
+        catalogue.insert(new Vehicule("honda","HGHGGJ55",2004,65654,5,true,"jaune",TypeCarburant.hybride, Type.Prestige));
 
         marque.setCellValueFactory( new PropertyValueFactory<Vehicule,String>("marque"));
         immatriculation.setCellValueFactory( new PropertyValueFactory<Vehicule,String>("numeroImmatriculation"));

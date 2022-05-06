@@ -10,7 +10,7 @@ public class ControleurReservation {
 
     private Reservation reservation;
     private List<Reservation> reservations;
-    private ReservationRepository repo;
+    private final ReservationRepository repo;
 
     public ControleurReservation()
     {

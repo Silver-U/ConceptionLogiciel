@@ -10,9 +10,9 @@ import java.util.List;
 public class BaseDonnee
 {
     static BaseDonnee instance;
-    private List<Reservation> reservations;
-    private List<Location> locations;
-    private List<Client> clients;
+    private final List<Reservation> reservations;
+    private final List<Location> locations;
+    private final List<Client> clients;
 
 
     private BaseDonnee()

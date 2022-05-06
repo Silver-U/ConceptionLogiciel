@@ -55,7 +55,7 @@ public class HelloController
         places.setCellValueFactory( new PropertyValueFactory<Vehicule,Integer>("nombreDePlace"));
         location_reservation.setCellValueFactory( new PropertyValueFactory<Vehicule,Boolean>("EnLocationReservation"));
 
-        table.setItems((ObservableList) catalogue.getVehicules());
+        table.setItems((ObservableList) Catalogue.getVehicules());
     }
 
     public void swapTo(String url) throws IOException
