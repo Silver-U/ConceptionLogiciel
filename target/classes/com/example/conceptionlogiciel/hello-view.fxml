@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.conceptionlogiciel.HelloController">
+   <children>
+      <BorderPane fx:id="content" prefHeight="406.0" prefWidth="600.0">
+         <left>
+            <VBox prefHeight="406.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button onAction="#gotoGererClient" mnemonicParsing="false" text="Gerer Client" />
+                  <Button onAction="#gotoConsCat" mnemonicParsing="false" text="Consulter Catalogue" />
+                  <Button onAction="#gotoEnrVeh" mnemonicParsing="false" text="Enregistrer Vehicule" />
+                  <Button onAction="#gotoSuppVeh" mnemonicParsing="false" text="Suppression Vehicule" />
+                  <Button onAction="#gotoGererClient" mnemonicParsing="false" text="Button" />
+                  <Button onAction="#gotoGererClient" mnemonicParsing="false" text="Button" />
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
