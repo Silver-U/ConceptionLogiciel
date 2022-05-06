@@ -1,21 +1,21 @@
 package com.example.conceptionlogiciel.Repository;
 
-import com.example.conceptionlogiciel.Models.Client;
+import com.example.conceptionlogiciel.Models.Reservation;
 
 public class ClientRepository
 {
-    public Client getClient(String numeroPermis)
+    public Reservation getClient(String numeroPermis)
     {
         return null;
     }
 
-    public void insert(Client client)
+    public void insert(Reservation client)
     {
 
     }
 
 
-    public void delete(Client client)
+    public void delete(Reservation client)
     {
 
     }
