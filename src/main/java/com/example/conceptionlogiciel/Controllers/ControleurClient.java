@@ -20,7 +20,6 @@ public class ControleurClient {
 
     public void createClient()
     {
-
     }
 
     public void insert(Client client)

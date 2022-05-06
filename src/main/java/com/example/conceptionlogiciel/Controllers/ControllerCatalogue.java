@@ -43,7 +43,7 @@ public class ControllerCatalogue {
         System.out.println("Sortie...");
     }
 
-    protected void loadCatalogue() throws IOException {
+    protected void loadCatalogue() {
 
         swapTo("catalogue.fxml");
 
@@ -60,7 +60,13 @@ public class ControllerCatalogue {
         table.setItems((ObservableList) catalogue.getVehicules());
     }
 
-    public void swapTo(String url) throws IOException {
-        border.setCenter(FXMLLoader.load(Objects.requireNonNull(getClass().getResource(url))));
+    public void swapTo(String url) {
+        try{
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(url));
+            Parent root = loader.load();
+            border.setCenter(root);}
+        catch (IOException e){
+            e.printStackTrace();
+        }
     }
 }
