@@ -31,6 +31,11 @@ public class Vehicule
         this.type = type;
     }
 
+    public Vehicule(String sadasd)
+    {
+        marque = sadasd;
+    }
+
     public String getMarque()
     {
         return marque;

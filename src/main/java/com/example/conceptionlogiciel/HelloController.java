@@ -1,6 +1,6 @@
 package com.example.conceptionlogiciel;
 
-import com.example.conceptionlogiciel.Models.Voiture.Etat;
+
 import com.example.conceptionlogiciel.Models.Voiture.TypeCarburant;
 import com.example.conceptionlogiciel.Models.Voiture.Vehicule;
 import javafx.collections.ObservableList;
@@ -54,7 +54,6 @@ public class HelloController
         kilometrage.setCellValueFactory( new PropertyValueFactory<Vehicule,Integer>("killometrage"));
         places.setCellValueFactory( new PropertyValueFactory<Vehicule,Integer>("nombreDePlace"));
         location_reservation.setCellValueFactory( new PropertyValueFactory<Vehicule,Boolean>("EnLocationReservation"));
-        etat.setCellValueFactory( new PropertyValueFactory<Vehicule, Etat>("etat"));
 
         table.setItems((ObservableList) catalogue.getVehicules());
     }
