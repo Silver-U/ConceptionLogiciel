@@ -6,17 +6,22 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="78.0" layoutY="27.0" prefHeight="15.0" prefWidth="106.0" text="Nom" />
+      <Label layoutX="69.0" layoutY="25.0" prefHeight="15.0" prefWidth="106.0" text="Marque" />
       <TextField layoutX="281.0" layoutY="78.0" prefHeight="19.0" prefWidth="239.0" />
       <TextField layoutX="275.0" layoutY="176.0" prefHeight="26.0" prefWidth="239.0" />
       <TextField layoutX="270.0" layoutY="231.0" prefHeight="19.0" prefWidth="239.0" />
       <TextField layoutX="278.0" layoutY="132.0" prefHeight="26.0" prefWidth="239.0" />
       <TextField layoutX="281.0" layoutY="32.0" prefHeight="19.0" prefWidth="239.0" />
-      <Label layoutX="78.0" layoutY="82.0" text="Prenom" />
-      <Label layoutX="70.0" layoutY="136.0" text="Numéro de Permis" />
-      <Label layoutX="61.0" layoutY="180.0" text="Numéro de téléphone" />
-      <Label layoutX="77.0" layoutY="235.0" text="Adresse" />
+      <Label layoutX="64.0" layoutY="82.0" text="NuméroImmatriculation" />
+      <Label layoutX="61.0" layoutY="136.0" text="Année" />
+      <Label layoutX="61.0" layoutY="180.0" text="Killométrage" />
+      <Label layoutX="61.0" layoutY="235.0" text="NombreDePlace" />
       <Button layoutX="94.0" layoutY="326.0" mnemonicParsing="false" text="Annuler" />
       <Button layoutX="430.0" layoutY="326.0" mnemonicParsing="false" text="Enregistrer" />
+      <Button layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="42.0" text="&lt;-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

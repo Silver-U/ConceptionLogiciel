@@ -2,6 +2,7 @@ package com.example.conceptionlogiciel.Models;
 
 import java.util.ArrayList;
 import java.util.List;
+//************Kévine Sawadogo************************
 
 public class Client
 {
