@@ -54,7 +54,7 @@ public class ControleurReservation {
     public void setReservation(Reservation reservation) {this.reservation = reservation;}
     public List<Reservation> getReservations()
     {
-        return reservation;
+        return reservations;
     }
 
 

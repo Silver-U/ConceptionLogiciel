@@ -1,39 +1,31 @@
 package com.example.conceptionlogiciel;
 
 import com.example.conceptionlogiciel.Models.Voiture.Vehicule;
-import com.example.conceptionlogiciel.Repository.VehiculeRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Catalogue
-{
+public class Catalogue {
     private Vehicule tempVehicule;
-    private List<Vehicule> vehicules;
+    private static List<Vehicule> vehicules;
 
-    public Catalogue()
-    {
+    public Catalogue() {
         vehicules = new ArrayList<>();
     }
 
-    public void insert(Vehicule vehicule)
-    {
+    public void insert(Vehicule vehicule) {
         vehicules.add(vehicule);
     }
 
-    public void delete(Vehicule vehicule)
-    {
+    public void delete(Vehicule vehicule) {
         vehicules.remove(vehicule);
     }
 
-    public boolean vehiculeExiste(String numeroImmatriculation)
-    {
+    public boolean vehiculeExiste(String numeroImmatriculation) {
         boolean isthere = false;
 
-        for(Vehicule v : vehicules)
-        {
-            if (v.getNumeroImmatriculation().equals(numeroImmatriculation))
-            {
+        for (Vehicule v : vehicules) {
+            if (v.getNumeroImmatriculation().equals(numeroImmatriculation)) {
                 isthere = true;
                 break;
             }
@@ -41,15 +33,15 @@ public class Catalogue
         return isthere;
     }
 
-    public Vehicule getTempVehicule(String numeroImmatriculation)
-    {
-        for(Vehicule v : vehicules)
-        {
-            if (v.getNumeroImmatriculation().equals(numeroImmatriculation))
-            {
+    public Vehicule getTempVehicule(String numeroImmatriculation) {
+        for (Vehicule v : vehicules) {
+            if (v.getNumeroImmatriculation().equals(numeroImmatriculation)) {
                 return v;
             }
         }
         return null;
+    }
+    public static List<Vehicule> getVehicules() {
+        return vehicules;
     }
 }

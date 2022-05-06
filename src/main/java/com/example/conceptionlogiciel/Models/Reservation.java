@@ -39,4 +39,7 @@ public class Reservation {
     public void setDateFinResevation(String dateFinResevation) {
         this.dateFinResevation = dateFinResevation;
     }
+
+    public boolean isEnLocationReservation() { return true;
+    }
 }

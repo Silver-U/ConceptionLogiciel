@@ -167,4 +167,25 @@ public class Vehicule
     {
         this.numeroImmatriculation = numeroImmatriculation;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicule{" +
+                "Marque='" + marque + '\'' +
+                ", NumeroImmatriculation='" + numeroImmatriculation + '\'' +
+                ", Annee=" + annee +
+                ", PourClientEnregistrer=" + pourClientEnregistrer +
+                ", killometrage=" + killometrage +
+                ", nombreDePlace=" + nombreDePlace +
+                ", etat=" + etat +
+                ", En Location/Reservation :" + EnLocationReservation +
+                ", TailleReservoir :" + tailleReservoir +
+                ", Couleur='" + couleur + '\'' +
+                ", Carburant=" + carburant +
+                ", NombrePorte=" + nombrePorte +
+                ", Hauteur=" + hauteur +
+                ", Largeur=" + largeur +
+                ", Poids=" + poids +
+                '}';
+    }
 }

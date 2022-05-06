@@ -1,5 +1,10 @@
 package com.example.conceptionlogiciel.Models;
 
+import com.example.conceptionlogiciel.Models.Voiture.Vehicule;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Employee
 {
     private String nom;
@@ -61,4 +66,5 @@ public class Employee
     {
         return codeEmploye;
     }
+
 }
