@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="443.0" layoutY="90.0" prefHeight="15.0" prefWidth="106.0" text="Rechercher" />
+      <TextField layoutX="80.0" layoutY="86.0" prefHeight="26.0" prefWidth="345.0" />
+
+
+      <Button layoutX="14.0" layoutY="80.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="42.0" text="&lt;-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="157.0" layoutY="31.0" text="Cas d'utilistion(rétirer véhicule endommangé)" />
+   </children>
+</AnchorPane>

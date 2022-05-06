@@ -10,7 +10,7 @@ public class ControleurClient {
 
 
     private Client client;
-    private List<Client> client;
+    private List<Client> clients;
     private ClientRepository repo;
 
     public ControleurClient()
@@ -28,20 +28,6 @@ public class ControleurClient {
         repo.insert(client);
     }
 
-    public boolean supprimerClient(Client client)
-    {
-        if (clientSupprimable())
-        {
-            repo.delete(client);
-            return true;
-        }
-        return false;
-    }
-
-    public boolean clientSupprimable()
-    {
-        return client.isEnLocationClient();
-    }
 
     public void getClient(String numeroImmatriculation)
     {
@@ -50,16 +36,16 @@ public class ControleurClient {
 
     public Client getClient() {return client;}
 
-    public void setClient(client client) {this.client = client;}
-    public List<Client> getClient()
+    public void setClient(Client client) {this.client = client;}
+    public List<Client> getClients()
     {
-        return client;
+        return clients;
     }
 
 
-    public void setClient(List<Client> client)
+    public void setClient(List<Client> clients)
     {
-        this.client = client;
+        this.clients = clients;
     }
 
     public ClientRepository getRepo()

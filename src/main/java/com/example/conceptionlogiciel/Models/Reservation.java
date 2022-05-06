@@ -2,7 +2,7 @@ package com.example.conceptionlogiciel.Models;
 
 import com.example.conceptionlogiciel.Models.Voiture.Vehicule;
 
-public class Client {
+public class Reservation {
     private Client client;
     private Vehicule vehicule;
     private String idResevation;

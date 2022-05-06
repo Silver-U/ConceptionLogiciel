@@ -9,6 +9,8 @@ import java.io.IOException;
 
 public class HelloApplication extends Application
 {
+
+    private static HelloController controller;
     @Override
     public void start(Stage stage) throws IOException
     {
@@ -17,10 +19,11 @@ public class HelloApplication extends Application
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+        controller.loadCatalogue();
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException {
+
         launch();
     }
 }
