@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="519.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.conceptionlogiciel.ControllerCatalogue">
    <children>
-      <BorderPane layoutX="3.0" layoutY="7.0" prefHeight="446.0" prefWidth="763.0">
+      <BorderPane layoutX="3.0" layoutY="7.0" prefHeight="446.0" prefWidth="763.0" fx:id="border">
          <center>
             <TableView fx:id="table" prefHeight="418.0" prefWidth="794.0" BorderPane.alignment="CENTER">
                <columns>
@@ -18,7 +18,7 @@
                   <TableColumn prefWidth="100.80001068115234" text="Immatriculation" />
                   <TableColumn prefWidth="58.39996337890625" text="Année" />
                   <TableColumn prefWidth="71.20002746582031" text="Couleur" />
-                  <TableColumn prefWidth="59.20001220703125" text="Etat" />
+                  <TableColumn prefWidth="59.20001220703125" text="Type" />
                   <TableColumn prefWidth="77.60003662109375" text="Places" />
                   <TableColumn prefWidth="97.5999755859375" text="Carburant" />
                   <TableColumn prefWidth="100.79998779296875" text="Kilometrage" />

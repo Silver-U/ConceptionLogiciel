@@ -2,18 +2,17 @@ package com.example.conceptionlogiciel.Models;
 
 import com.example.conceptionlogiciel.Models.Voiture.Vehicule;
 
-public class Reservation
-{
-    private Reservation client;
+public class Reservation {
+    private Client client;
     private Vehicule vehicule;
     private String idResevation;
     private String dateFinResevation;
 
-    public Reservation getClient() {
+    public Client getClient() {
         return client;
     }
 
-    public void setClient(Reservation client) {
+    public void setClient(Client client) {
         this.client = client;
     }
 

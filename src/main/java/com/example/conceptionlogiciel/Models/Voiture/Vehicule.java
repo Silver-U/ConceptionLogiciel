@@ -5,10 +5,11 @@ public class Vehicule
     private String marque;
     private String numeroImmatriculation;
     private int annee;
+    private Type type;
     private boolean pourClientEnregistrer;
     private int killometrage;
     private int nombreDePlace;
-    private Etat etat;
+
     private boolean EnLocationReservation;
     private float tailleReservoir;
     private String couleur;
@@ -18,9 +19,16 @@ public class Vehicule
     private int largeur;
     private int poids;
 
-    public Vehicule(String marque)
-    {
+    public Vehicule(String marque, String numeroImmatriculation, int annee, int killometrage, int nombreDePlace, boolean enLocationReservation, String couleur, TypeCarburant carburant, Type type) {
         this.marque = marque;
+        this.numeroImmatriculation = numeroImmatriculation;
+        this.annee = annee;
+        this.killometrage = killometrage;
+        this.nombreDePlace = nombreDePlace;
+        EnLocationReservation = enLocationReservation;
+        this.couleur = couleur;
+        this.carburant = carburant;
+        this.type = type;
     }
 
     public String getMarque()
@@ -153,15 +161,6 @@ public class Vehicule
         this.nombreDePlace = nombreDePlace;
     }
 
-    public Etat getEtat()
-    {
-        return etat;
-    }
-
-    public void setEtat(Etat etat)
-    {
-        this.etat = etat;
-    }
 
     public String getNumeroImmatriculation()
     {
@@ -173,6 +172,14 @@ public class Vehicule
         this.numeroImmatriculation = numeroImmatriculation;
     }
 
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "Vehicule{" +
@@ -182,7 +189,6 @@ public class Vehicule
                 ", PourClientEnregistrer=" + pourClientEnregistrer +
                 ", killometrage=" + killometrage +
                 ", nombreDePlace=" + nombreDePlace +
-                ", etat=" + etat +
                 ", En Location/Reservation :" + EnLocationReservation +
                 ", TailleReservoir :" + tailleReservoir +
                 ", Couleur='" + couleur + '\'' +
@@ -191,6 +197,7 @@ public class Vehicule
                 ", Hauteur=" + hauteur +
                 ", Largeur=" + largeur +
                 ", Poids=" + poids +
+                ", Type=" + type +
                 '}';
     }
 }
