@@ -8,6 +8,16 @@ public class Reservation {
     private String idResevation;
     private String dateFinResevation;
 
+    private Paiement paiement;
+
+    public Paiement getPaiement() {
+        return paiement;
+    }
+
+    public void setPaiement(Paiement paiement) {
+        this.paiement = paiement;
+    }
+
     public Client getClient() {
         return client;
     }
