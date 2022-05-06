@@ -18,6 +18,11 @@ public class Vehicule
     private int largeur;
     private int poids;
 
+    public Vehicule(String marque)
+    {
+        this.marque = marque;
+    }
+
     public String getMarque()
     {
         return marque;

@@ -1,4 +1,4 @@
-package com.example.conceptionlogiciel.Controllers;
+package com.example.conceptionlogiciel;
 
 import com.example.conceptionlogiciel.Catalogue;
 import com.example.conceptionlogiciel.Models.Voiture.Vehicule;

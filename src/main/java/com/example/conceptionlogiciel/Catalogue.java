@@ -1,6 +1,7 @@
 package com.example.conceptionlogiciel;
 
 import com.example.conceptionlogiciel.Models.Voiture.Vehicule;
+import javafx.scene.input.MouseEvent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,7 @@ public class Catalogue {
 
     public Catalogue() {
         vehicules = new ArrayList<>();
+        vehicules.add(new Vehicule("sadasd"));
     }
 
     public void insert(Vehicule vehicule) {
@@ -43,5 +45,13 @@ public class Catalogue {
     }
     public static List<Vehicule> getVehicules() {
         return vehicules;
+    }
+
+    public void onClicked(MouseEvent mouseEvent)
+    {
+    }
+
+    public void onClicked2(MouseEvent mouseEvent)
+    {
     }
 }

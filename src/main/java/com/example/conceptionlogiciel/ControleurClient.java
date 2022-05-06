@@ -1,4 +1,4 @@
-package com.example.conceptionlogiciel.Controllers;
+package com.example.conceptionlogiciel;
 
 import com.example.conceptionlogiciel.Models.Reservation;
 import com.example.conceptionlogiciel.Repository.ClientRepository;
